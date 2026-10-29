@@ -1,0 +1,28 @@
+﻿# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js & NestJS Builds
+.next/
+dist/
+out/
+build/
+.turbo/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

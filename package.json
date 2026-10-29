@@ -1,0 +1,18 @@
+{
+  "name": "medcore",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MedCore - Patient Health Management System",
+  "scripts": {
+    "dev:web": "pnpm --filter @medcore/web dev",
+    "dev:api": "pnpm --filter @medcore/api start:dev",
+    "dev": "pnpm run --parallel dev:web dev:api",
+    "build:web": "pnpm --filter @medcore/web build",
+    "build:api": "pnpm --filter @medcore/api build",
+    "lint": "pnpm run -r lint",
+    "clean": "pnpm run -r clean"
+  },
+  "keywords": ["healthcare", "patient-management", "ehr", "telemedicine"],
+  "author": "Aditya",
+  "license": "MIT"
+}

@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: medcore-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespassword
+      POSTGRES_DB: medcore
+    ports:
+      - '5433:5432'
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: medcore-redis
+    ports:
+      - '6379:6379'
+    restart: unless-stopped
